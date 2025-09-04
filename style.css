@@ -1,0 +1,180 @@
+/* navbar */
+nav {
+  display: flex;
+  justify-content: space-between; /* kiri & kanan */
+  align-items: center;
+  padding: 0px 60px;
+}
+
+.left-nav {
+  align-items: center;
+  display: flex;
+}
+
+.logo img {
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.left-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-nav ul li {
+  margin-right: 20px;
+}
+
+.left-nav ul li a {
+    color: rgb(30, 26, 26);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* jarak antara login dan tombol */
+}
+
+.right-nav .login {
+  color: rgb(30, 26, 26);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.right-nav .btn-primary {
+  background: #007bff; /* biru ala Trello */
+  color: white;
+  padding: 10px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: 0.3 ease;
+}
+
+.right-nav .btn-primary:hover {
+  background: #0056b3;
+}
+
+/* kolom kiri */
+body {
+  font-family: arial, sans-serif;
+  background-color: #f9fafc;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  background-color: #f3f3f5;
+}
+
+.container .left {
+  flex: 1;
+  max-width: 550px;
+  padding-left: 200px;
+  padding-top: 120px;
+}
+
+.container .left h1 {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.3;
+  margin-bottom: 20px;
+  color: #172b4d;
+}
+
+.container .left .subtitle {
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.container .left .form-group {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.container .left .form-group input[type="email"] {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  width: 280px;
+}
+
+.container .left .form-group button {
+  background-color: #0073e6;
+  border: none;
+  color: white;
+  padding: 14px 22px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
+
+.container .left .form-group button:hover {
+  background-color: #005bb5;
+}
+
+.container .left .policy {
+  font-size: 14px;
+  color: #555;
+  margin: 15px 0;
+}
+
+.container .left .policy a {
+  color: #005bb5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container .left .policy a:hover {
+  text-decoration: underline;
+}
+
+.container .left .wacth-vidio {
+  margin-top: 10px;
+}
+
+.container .left .wacth-vidio a {
+  color: #005bb5;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.container .left .wacth-vidio a:hover {
+  text-decoration: underline;
+}
+
+/* kolom kanan */
+.right {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.right video {
+  width: 750px;
+  height: auto;
+}
+
+.lobby {
+  width: 100%;
+}
