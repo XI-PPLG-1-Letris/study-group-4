@@ -1,23 +1,43 @@
 body {
   font-family: arial, sans-serif;
-  background-color: #f9fafc;
-  margin: 0;
+  background-color: red;
+  margin: auto; /* Sesuaikan nilai 20px sesuai kebutuhan Anda */
+  box-sizing: border-box; /* Ini penting untuk memastikan margin tidak menambah ukuran elemen secara keseluruhan */
   padding: 0;
 }
 /* navbar*/
 
+.nav-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: white;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
 .nav-container {
-  display: grid;
+    display: grid;
   grid-template-columns: auto 1fr 1fr;
-  grid-template-rows: repeat(1, 1fr);
+  grid-template-rows: 1fr;
   gap: 0px;
+  margin: 0 auto;
   align-self: start;
+  width: 100%;
+  max-width: 1260px; /* atur sesuai kebutuhan */
+  height: 65px;
+  background: transparent; /* biar transparan, background di .nav-bg */
 }
 
 .left-nav {
   padding: 4px;
   height: 60px;
   view-box: 0 0 312 105;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .left-nav img {
@@ -25,31 +45,11 @@ body {
   height: auto;
 }
 
-/* navbar */
-.nav-container {
-  display: grid;
-  grid-template-columns: max-content 2fr 0.6fr;
-  grid-template-rows: repeat(1, 1fr);
-  /* padding: 15px; */
-  height: 50px;
-  align-items: center;
-  gap: 8px;
-  grid-column: span 2 / span 2;
-  position: sticky;
-  width: 100%;
-  background-color: #f4f5f7;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.left-nav {
-  align-items: center;
+.mid-nav {
   display: flex;
-}
-
-.left-nav img {
-  width: 120px;
-  height: auto;
-  margin-right: 20px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .mid-nav button {
@@ -64,9 +64,9 @@ body {
 .right-nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: end;
   gap: 15px; /* jarak antara login dan tombol */
-  height: 32px;
+  height: 60px;
 }
 
 .right-nav .login {
@@ -75,19 +75,31 @@ body {
   font-size: 16px;
 }
 
+.right-nav button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  height: 100%;
+}
+
+.down-arrow {
+  width: 12px;
+  height: auto;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 .right-nav .btn-primary {
   background: #007bff; /* biru ala Trello */
   color: white;
-  padding: 10px 20px;
+  padding: 25px 25px;
   border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   transition: 0.3 ease;
-  height: 100%;
   cursor: pointer;
-  align-items: center;
-  display: flex;
 }
 
 .right-nav .btn-primary:hover {
@@ -109,8 +121,42 @@ body {
 .content-left {
   padding: 10px;
   margin-top: 25%;
-  margin-left: 25%;
+  margin-left: 10%;
   margin-bottom: 25%;
+}
+
+.subtitle {
+  font-size: 19px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.form-group input {
+  width: 300px;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-group button {
+  width: 160px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 .right video {
@@ -177,5 +223,35 @@ body {
 }
 
 .lobby {
-  width: 100%;
+  width: 60%;
+  padding-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+}
+
+.lobby h4 {
+  font-size: 16px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.lobby p {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  width: 65%;
+}
+
+.lobby h2 {
+  padding-bottom: 20px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.img- img {
+  width: 50%;
+  height: auto;
 }

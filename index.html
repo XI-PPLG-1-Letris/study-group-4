@@ -8,25 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <div class="nav-bg">
     <nav class="nav-container">
       <div class="left-nav">
         <img src="assets/trello-logo-2023-removebg-preview_(1).png" alt="Logo">
       </div>
 
       <div class="mid-nav">
-        <button>Features</button>
-        <button>Solutions</button>
-        <button>Plans</button>
-        <button>Resources</button>
+        <button>Features<img class="down-arrow" src="assets/down-arrow.png" alt="Logo"></button>
+        <button>Solutions<img class="down-arrow" src="assets/down-arrow.png" alt="Logo"></button>
+        <button>Plans<img class="down-arrow" src="assets/down-arrow.png" alt="Logo"></button>
+        <button>Resources<img class="down-arrow" src="assets/down-arrow.png" alt="Logo"></button>
       </div>
 
       <div class="right-nav">
         <a href="#" class="login">Log in</a>
-        <a href="#" class="btn-primary">get trello for free</a>
+        <button>
+          <a href="#" class="btn-primary">get trello for free</a>
+        </button>
       </div>
     </nav>
-
+  </div>
   <div class="container">
     <!-- kolom kiri -->
       <div class="left">
@@ -44,7 +46,7 @@
             <input type="email" placeholder="Email">
             <button>sign up - it's free!</button>
           </div>
-          
+          <hr>
           <p class="policy">
             By entering my email, I acknowledge the
             <a href="#">Atlassian Privacy Policy</a>
@@ -54,51 +56,21 @@
             <a href="#">watch-vidio ►</a>
           </div>
         </div>
-      </div>
-     
-      <div class="left">
-        <div class="content-left">
-          <h1 class="head-page-1"> Capture, organize, and
-            
-            tackle your to-dos from 
-            anywhere.
-          </h1>
-          <p class="subtitle">
-            Escape the clutter and chaos—unleash your productivity 
-            with Trello.
-          </p>
-          <div class="form-group">
-            <input type="email" placeholder="Email">
-            <button>sign up - it's free!</button>
-          </div>
-          
-          <p class="policy">
-            By entering my email, I acknowledge the
-            <a href="#">Atlassian Privacy Policy</a>
-          </p>
-          
-          <div class="watch-vidio">
-            <a href="#">watch-vidio ►</a>
-          </div>
-        </div>
-      </div>
-     
+      </div>     
      <!-- kolom kanan -->
       <div class="right">
-       <video src="assets/Trello background navbar.mp4"></video>
        <video src="assets/Trello background navbar.mp4"></video>
       </div>
   </div>
   <section class="isi-1">
     <div class="lobby">
         <h4>Trello 101</h4>
-        <h1>Your productivity powerhouse</h1>
+        <h2>Your productivity powerhouse</h2>
         <p>Stay organized and efficient with Inbox, Boards, and Planner. Every to-do, idea, or responsibility—no matter how small—finds its place, keeping you at the top of your game. </p>
     </div>
   </section>
   <section class="isi-2">
     <div class="isi-2-dalem">
-
       <button>
         <div class="card-1">
         <h3>Inbox</h3>
@@ -124,6 +96,5 @@
     </div>
   </div>
   </section>
-  </header>
 </body>
 </html>
