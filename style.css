@@ -1,9 +1,10 @@
 body {
   font-family: arial, sans-serif;
-  background-color: red;
+  background-color: white;
   margin: auto; /* Sesuaikan nilai 20px sesuai kebutuhan Anda */
   box-sizing: border-box; /* Ini penting untuk memastikan margin tidak menambah ukuran elemen secara keseluruhan */
   padding: 0;
+  oveerflow-x: hidden; /* Mencegah scroll horizontal */
 }
 /* navbar*/
 
@@ -11,15 +12,14 @@ body {
   position: sticky;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   background: white;
   z-index: 100;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .nav-container {
-    display: grid;
+  display: grid;
   grid-template-columns: auto 1fr 1fr;
   grid-template-rows: 1fr;
   gap: 0px;
@@ -204,9 +204,6 @@ body {
   background-color: #f3f3f5;
 }
 
-.left {
-}
-
 .content-left {
   padding: 10px;
   margin-top: 25%;
@@ -251,7 +248,60 @@ body {
   margin-bottom: 10px;
 }
 
+.isi-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 0px;
+  margin-left: 50px;
+}
+
+.isi-2-dalem {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  padding: 10px;
+  text-align: center;
+}
+
+.isi-2-dalem button {
+  background-color: white;
+  border: 0px;
+  width: 300px;
+  height: 136px;
+}
+
+.card-1 {
+  width: 300px;
+  height: 136px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-2 {
+  width: 300px;
+  height: 136px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.card-3 {
+  width: 300px;
+  height: 136px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
 .img- img {
-  width: 50%;
+  width: 60vw;
   height: auto;
 }
