@@ -1,10 +1,10 @@
 body {
-  font-family: arial, sans-serif;
+  font-family: sans-serif;
   background-color: white;
   margin: auto; /* Sesuaikan nilai 20px sesuai kebutuhan Anda */
   box-sizing: border-box; /* Ini penting untuk memastikan margin tidak menambah ukuran elemen secara keseluruhan */
   padding: 0;
-  oveerflow-x: hidden; /* Mencegah scroll horizontal */
+  overflow-x: hidden; /* Mencegah scroll horizontal */
 }
 /* navbar*/
 
@@ -13,8 +13,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
   z-index: 100;
+  background: white;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -90,14 +90,21 @@ body {
   vertical-align: middle;
 }
 
+.right-nav button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  height: 60px;
+}
+
 .right-nav .btn-primary {
-  background: #007bff; /* biru ala Trello */
+  background-color: #007bff; /* biru ala Trello */
   color: white;
-  padding: 25px 25px;
-  border-radius: 4px;
+  padding: 27px 27px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 19px;
   transition: 0.3 ease;
   cursor: pointer;
 }
@@ -108,14 +115,23 @@ body {
 
 /* kolom kiri */
 
+.container-hs-bg {
+  width: 100%;
+  z-index: 100;  
+  background-color: rgb(244, 245, 247);
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr);
   gap: 0px;
-  justify-content: space-between;
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
   padding: 20px;
-  background-color: #f3f3f5;
+  background-color: rgb(244, 245, 247);
 }
 
 .content-left {
@@ -168,6 +184,15 @@ body {
   font-size: 48px;
 }
 
+/* content 1 */
+
+.content-1 {
+  margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
+}
+
 .isi-1 {
   display: grid;
   grid-template-columns: max-content 1fr 1fr;
@@ -187,32 +212,6 @@ body {
   font-size: 36px;
   margin-top: 0px;
   margin-bottom: 10px;
-}
-
-.mid-nav ul {
-  list-style: none;
-  display: flex;
-}
-
-.container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  gap: 0px;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #f3f3f5;
-}
-
-.content-left {
-  padding: 10px;
-  margin-top: 25%;
-  margin-bottom: 25%;
-}
-
-.right video {
-  width: 100%;
-  height: 100%;
 }
 
 .head-page-1 {
@@ -250,9 +249,8 @@ body {
 
 .isi-2 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr);
-  gap: 0px;
   margin-left: 50px;
 }
 
@@ -261,6 +259,8 @@ body {
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
   padding: 10px;
+  width: 300px;
+  gap: 20px;
   text-align: center;
 }
 
@@ -268,7 +268,12 @@ body {
   background-color: white;
   border: 0px;
   width: 300px;
+  gap: 10px;
   height: 136px;
+}
+
+.isi-kanan {
+  grid-column: span 2 / span 2;
 }
 
 .card-1 {
@@ -281,6 +286,20 @@ body {
   padding: 20px;
 }
 
+.card-1 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+} 
+
+.card-1 p {
+  font-size: 16px;
+  margin: 0;
+  text-align: start;
+}
+
 .card-2 {
   width: 300px;
   height: 136px;
@@ -289,6 +308,20 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   padding: 20px;
+}
+
+.card-2 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+} 
+
+.card-2 p {
+  font-size: 16px;
+  margin: 0;
+  text-align: start;
 }
 
 .card-3 {
@@ -301,7 +334,188 @@ body {
   padding: 20px;
 }
 
+.card-3 h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: start;
+} 
+
+.card-3 p {
+  font-size: 16px;
+  margin: 0;
+  text-align: start;
+}
+
+.card-4 {
+  border-radius: 8px;
+  margin-bottom: 20px; 
+}
+
+.button-content-1 {
+  width: 726px;
+  padding-left: 700px;
+  margin-bottom: 10px;
+  
+}
+
+.card-4-button {
+  background-color: gray;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  border: none;
+  margin: 0 auto;
+}
+.img- {
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .img- img {
-  width: 60vw;
-  height: auto;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+/* ... responsif hero section ... */
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 10px;
+    gap: 20px;
+  }
+  .content-left {
+    margin-top: 10%;
+    margin-left: 0;
+    margin-bottom: 10%;
+    padding: 0; 
+  }
+  .left {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .right {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .right video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* responsif content 1 */
+
+@media (max-width: 900px) {
+  .content-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  .isi-1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    margin-left: 0;
+    gap: 20px;
+  }
+  .lobby {
+    width: 100%;
+    padding-right: 0;
+  }
+  .lobby p {
+    width: 100%;
+  }
+  .isi-2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    margin-left: 0;
+    padding: 0px;
+    gap: 20px;
+  }
+  .isi-2-dalem {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: start;
+  }
+  .card-1 {
+    width: 100% !important;
+    height: 136px !important;
+    margin: 0 !important;
+    padding: 5px !important;
+    border-radius: 5% !important;
+  }
+  .card-1 h3 {
+    margin: 5px;
+  }
+  .card-1-button {
+    padding: 0 0 0 10px;
+    margin-left: 40px;
+    background-color: blue !important;
+    border-radius: 10% !important;
+  }
+
+  .card-2-button,
+  .card-3-button {
+    display: none !important;
+  }
+
+  .card-2,
+  .card-3 {
+    display: none !important;
+    background-color: transparent !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  .card-4 {
+    width: 900px !important;
+    margin: 0;
+    padding: 0;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-content-1 {
+    width: 100%;
+    padding-left: 665px;
+  }
+
+  .img- {
+    width: !important;
+
+  }
+  .img- img {
+    width: 80% !important;
+    height: auto !important;
+  }
+}
+
+/* font custom */
+@font-face {
+  font-family: "charlie";
+  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display.ttf);
+}
+
+@font-face {
+  font-family: "charlie-2";
+  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display-2.ttf);
+}
+
+@font-face {
+  font-family: "charlie-text";
+  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display-3.ttf);
 }

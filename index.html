@@ -16,37 +16,46 @@
             alt="Logo"
           />
         </div>
-
-        <div class="mid-nav">
-          <button>
-            Features<img
-              class="down-arrow"
-              src="assets/down-arrow.png"
-              alt="Logo"
-            />
-          </button>
-          <button>
-            Solutions<img
-              class="down-arrow"
-              src="assets/down-arrow.png"
-              alt="Logo"
-            />
-          </button>
-          <button>
-            Plans<img
-              class="down-arrow"
-              src="assets/down-arrow.png"
-              alt="Logo"
-            />
-          </button>
-          <button>
-            Resources<img
-              class="down-arrow"
-              src="assets/down-arrow.png"
-              alt="Logo"
-            />
-          </button>
-        </div>
+        <table class="mid-nav">
+          <tr>
+            <th>
+              <button>
+                Features<img
+                  class="down-arrow"
+                  src="assets/down-arrow.png"
+                  alt="Logo"
+                />
+              </button>
+            </th>
+            <th>
+              <button>
+                Solutions<img
+                  class="down-arrow"
+                  src="assets/down-arrow.png"
+                  alt="Logo"
+                />
+              </button>
+            </th>
+            <th>
+              <button>
+                Plans<img
+                  class="down-arrow"
+                  src="assets/down-arrow.png"
+                  alt="Logo"
+                />
+              </button>
+            </th>
+            <th>
+              <button>
+                Resources<img
+                  class="down-arrow"
+                  src="assets/down-arrow.png"
+                  alt="Logo"
+                />
+              </button>
+            </th>
+          </tr>
+        </table>
 
         <div class="right-nav">
           <a href="#" class="login">Log in</a>
@@ -56,82 +65,94 @@
         </div>
       </nav>
     </div>
-    <div class="container">
-      <!-- kolom kiri -->
-      <div class="left">
-        <div class="content-left">
-          <h1 class="head-page-1">
-            Capture, organize, and tackle your to-dos from anywhere.
-          </h1>
-          <p class="subtitle">
-            Escape the clutter and chaos—unleash your productivity with Trello.
-          </p>
-          <div class="form-group">
-            <input type="email" placeholder="Email" />
-            <button>sign up - it's free!</button>
-          </div>
-          <hr />
-          <p class="policy">
-            By entering my email, I acknowledge the
-            <a href="#">Atlassian Privacy Policy</a>
-          </p>
+    <!-- hero section -->
+    <div class="container-hs-bg">
 
-          <div class="watch-vidio">
-            <a href="#">watch-vidio ►</a>
+      <div class="container">
+        <!-- kolom kiri -->
+        <div class="left">
+          <div class="content-left">
+            <h1 class="head-page-1">
+              Capture, organize, and tackle your to-dos from anywhere.
+            </h1>
+            <p class="subtitle">
+              Escape the clutter and chaos—unleash your productivity with Trello.
+            </p>
+            <div class="form-group">
+              <input type="email" placeholder="Email" />
+              <button>sign up - it's free!</button>
+            </div>
+            <hr />
+            <p class="policy">
+              By entering my email, I acknowledge the
+              <a href="#">Atlassian Privacy Policy</a>
+            </p>
+            <div class="watch-vidio">
+              <a href="#">watch-vidio ►</a>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- kolom kanan -->
-      <div class="right">
-        <video src="assets/Trello background navbar.mp4"></video>
+        <!-- kolom kanan -->
+        <div class="right">
+          <video src="assets/Trello background navbar.mp4"></video>
+        </div>
       </div>
     </div>
-    <section class="isi-1">
-      <div class="lobby">
-        <h4>Trello 101</h4>
-        <h2>Your productivity powerhouse</h2>
-        <p>
-          Stay organized and efficient with Inbox, Boards, and Planner. Every
-          to-do, idea, or responsibility—no matter how small—finds its place,
-          keeping you at the top of your game.
-        </p>
-      </div>
-    </section>
-    <section class="isi-2">
-      <div class="isi-2-dalem">
-        <button>
-          <div class="card-1">
-            <h3>Inbox</h3>
-            <p>
-              When it`s on your mind, it goes in your Inbox. Capture your to-dos
-              from anywhere, anytime.
-            </p>
-          </div>
-        </button>
-        <button>
-          <div class="card-2">
-            <h3>Boards</h3>
-            <p>
-              Your to-do list may be long, but it can be manageable! Keep tabs
-              on everything from "to-dos to tackle" to "mission accomplished!”
-            </p>
-          </div>
-        </button>
-        <button>
-          <div class="card-3">
-            <h3>Planner</h3>
-            <p>
-              Drag, drop, get it done. Snap your top tasks into your calendar
-              and make time for what truly matters.
-            </p>
-          </div>
-        </button>
-      </div>
-      <div class="card-4">
-        <div class="img-">
-          <img src="assets/trello.png" alt="img" />
+    <!-- content 1 -->
+    <div class="content-1">
+      <section class="isi-1">
+        <div class="lobby">
+          <h4>Trello 101</h4>
+          <h2>Your productivity powerhouse</h2>
+          <p>
+            Stay organized and efficient with Inbox, Boards, and Planner. Every
+            to-do, idea, or responsibility—no matter how small—finds its place,
+            keeping you at the top of your game.
+          </p>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="isi-2">
+        <div class="isi-2-dalem">
+          <button class="card-1-button">
+            <div class="card-1">
+              <h3>Inbox</h3>
+              <p>
+                When it`s on your mind, it goes in your Inbox. Capture your to-dos
+                from anywhere, anytime.
+              </p>
+            </div>
+          </button>
+          <button class="card-2-button">
+            <div class="card-2">
+              <h3>Boards</h3>
+              <p>
+                Your to-do list may be long, but it can be manageable! Keep tabs
+                on everything from "to-dos to tackle" to "mission accomplished!”
+              </p>
+            </div>
+          </button>
+          <button class="card-3-button">
+            <div class="card-3">
+              <h3>Planner</h3>
+              <p>
+                Drag, drop, get it done. Snap your top tasks into your calendar
+                and make time for what truly matters.
+              </p>
+            </div>
+          </button>
+        </div>
+        <div class="isi-kanan">
+          <div class="button-content-1">
+            <button class="card-4-button"></button>
+            <button class="card-4-button"></button>
+          </div>
+          <div class="card-4">
+            <div class="img-">
+              <img src="/assets/inbox.webp" alt="img" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
