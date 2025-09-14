@@ -1,43 +1,76 @@
-/* navbar */
-nav {
-  display: flex;
-  justify-content: space-between; /* kiri & kanan */
-  align-items: center;
-  padding: 0px 60px;
+body {
+  font-family: arial, sans-serif;
+  background-color: white;
+  margin: auto; /* Sesuaikan nilai 20px sesuai kebutuhan Anda */
+  box-sizing: border-box; /* Ini penting untuk memastikan margin tidak menambah ukuran elemen secara keseluruhan */
+  padding: 0;
+  overflow-x: hidden; /* Mencegah scroll horizontal */
+}
+/* navbar*/
+
+.nav-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px;
+  margin: 0 auto;
+  align-self: start;
+  width: 100%;
+  max-width: 1260px; /* atur sesuai kebutuhan */
+  height: 65px;
+  background: transparent; /* biar transparan, background di .nav-bg */
+  font-family: "Charlie-text";
 }
 
 .left-nav {
+  padding: 4px;
+  height: 60px;
   align-items: center;
   display: flex;
+  justify-content: center;
 }
 
-.logo img {
-  width: 120px;
+.left-nav img {
+  width: 111px;
   height: auto;
-  margin-right: 20px;
 }
 
-.left-nav ul {
+.mid-nav {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
-.left-nav ul li {
+.mid-nav button {
+  background: none;
+  border: none;
+  color: rgb(30, 26, 26);
+  font-size: 16px;
+  cursor: pointer;
   margin-right: 20px;
 }
 
-.left-nav ul li a {
-    color: rgb(30, 26, 26);
-  text-decoration: none;
-  font-size: 16px;
+.mid-nav button:hover {
+  color: #007bff;
 }
 
 .right-nav {
   display: flex;
   align-items: center;
+  justify-content: end;
   gap: 15px; /* jarak antara login dan tombol */
+  height: 60px;
 }
 
 .right-nav .login {
@@ -46,244 +79,164 @@ nav {
   font-size: 16px;
 }
 
+.right-nav button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  height: 100%;
+}
+
+.down-arrow {
+  width: 12px;
+  height: auto;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
 .right-nav .btn-primary {
   background: #007bff; /* biru ala Trello */
   color: white;
-  padding: 10px 24px;
-  border-radius: 4px;
   text-decoration: none;
   font-weight: bold;
   font-size: 16px;
   transition: 0.3 ease;
+  cursor: pointer;
+  padding: 25px 25px;
 }
 
 .right-nav .btn-primary:hover {
   background: #0056b3;
 }
 
-/* kolom kiri */
-body {
-  font-family: arial, sans-serif;
-  background-color: #f9fafc;
-  margin: 0;
-  padding: 0;
+.konten-3 .konten-3-text{
+  padding: 16px;
+  margin: 0px 16px;
+  padding-left: 310px;
 }
 
-/* .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;
-  padding: 20px;
-  background-color: #f3f3f5;
-}
-
-.container .left {
-  flex: 1;
-  max-width: 550px;
-  padding-left: 200px;
-  padding-top: 120px;
-}
-
-.container .left h1 {
-  font-size: 40px;
-  font-weight: bold;
-  line-height: 1.3;
-  margin-bottom: 20px;
-  color: #015eff;
-}
-
-.container .left .subtitle {
-  font-size: 18px;
-  color: #000000;
-  margin-bottom: 25px;
-  font-weight: 500;
-}
-
-.container .left .form-group {
-  display: flex;
-  margin-bottom: 12px;
-}
-
-.container .left .form-group input[type="email"] {
-  padding: 14px;
+.konten-3 .konten-3-text .headtext p{
   font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  width: 280px;
+  font-family: "Charlie-text";
+  font-weight: 900;
 }
 
-.container .left .form-group button {
-  background-color: #0073e6;
-  border: none;
-  color: white;
-  padding: 14px 22px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+.konten-3 .konten-3-text .headtext h2{
+  font-size: 36px;
+  padding: 0px 0px 16px;
+  margin: 0px 0px 8px;
+  font-family: "Charlie-display";
 }
 
-.container .left .form-group button:hover {
-  background-color: #005bb5;
-}
-
-.container .left .policy {
-  font-size: 14px;
-  color: #555;
-  margin: 15px 0;
-}
-
-.container .left .policy a {
-  color: #005bb5;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.container .left .policy a:hover {
-  text-decoration: underline;
-}
-
-.container .left .wacth-vidio {
-  margin-top: 10px;
-}
-
-.container .left .wacth-vidio a {
-  color: #005bb5;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.container .left .wacth-vidio a:hover {
-  text-decoration: underline;
-}
-
-.right {
-  flex: 1;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.right video {
-  width: 700px;
-  height: auto;
-} */
-
-.left{
-  padding-top: 128Px;
-}
-
-.left h1{
-  font-size: 48px;
-  font-family: sans-serif;
-  margin: 8px;
-  padding-left: 15px;
-}
-
-.left .subtitle {
+.konten-3 .konten-3-text p {
   font-size: 20px;
-  font-family: sans-serif;
-  margin: 24px;
+  font-family: "Charlie-text";
+  width: 490px;
 }
 
-.left .form-group {
-  padding-left: 30px;
-}
-
-.left .form-group input[type="email"]{
-  padding: 14px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-  width: 280px;
-}
-
-.left .form-group button {
-  background-color: #0073e6;
-  border: none;
-  color: white;
-  padding: 14px 22px;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-}
-
-.left .form-group button:hover{
-  background-color: #265695;
-}
-
-.container {
-  padding-left: 120px;
-  padding-right: 120px;
-  background-color: #f3f3f5;
-}
-
-.container-isi {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 8px;
-    background-color: #f3f3f5;
-}
-
-.container-isi .left .policy {
-  font-size: 16px;
-  font-family: "charlie-2" , sans-serif;
-  margin: 24px;
-  margin-bottom: 55px;
-}
-
-.container-isi .left .policy a {
-  color: #433def;
-}
-
-.container-isi .left .watch-vidio a {
-  font-size: 16px;
-  font-family: "charlie-2" , sans-serif;
-  padding-left: 30px;
-  color: #433def;
-}
-
-.right {
-  padding: 10px;
-}
-
-.video {
-  width: 100%;
-  height: auto;
-}
-
-.lobby {
-  /* width: 100%; */
+.triple-konten-3 {
+  display: grid;
+  background-color: #ffffff;
+  align-items: center;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+}
+
+.konten-3 .triple-konten-3 .integrations{
+  padding: 40px;
+  background-color: #Fafbfc;
+  border-radius: 12px;
+}
+.konten-3 .triple-konten-3 .integrations h3 {
+  margin: 16px 16px;
+  font-family: "Charlie-display";
+}
+
+.konten-3 .triple-konten-3 .integrations p{
+  width: 210px;
+  font-family: "Charlie-text";
+}
+
+.konten-3 .triple-konten-3 .integrations .Browse-button{
+  padding: 11.2px 16px 12.8px;
+  background-color: #ffffff;
+  border: #30a5c9;
+  border-style: groove;
+  border-radius: 12px;
   font-family: "charlie-text";
 }
 
-.lobby .title p{
-  width: 40%;
-  font;
+.konten-3 .triple-konten-3 .integrations .Browse-button:hover{
+  background-color: rgb(167, 170, 217);
 }
 
-
-/* font custom */
-@font-face {
-  font-family: "charlie";
-  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display.ttf);
+.konten-3 .triple-konten-3 .automation{
+  padding: 40px;
+  background-color: #Fafbfc;
+  border-radius: 12px;
 }
 
-@font-face {
-  font-family: "charlie-2";
-  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display-2.ttf);
+.konten-3 .triple-konten-3 .automation h3{
+  margin: 16px 16px;
+  font-family: "charlie-display";
 }
 
-@font-face {
+.konten-3 .triple-konten-3 .automation p {
+  width: 180px;
+  font-family: "Charlie-text";
+}
+
+.konten-3 .triple-konten-3 .automation .Automation-button{
+  padding: 11.2px 16px 12.8px;
+  background-color: #ffffff;
+  border: #30a5c9;
+  border-style: groove;
+  border-radius: 12px;
   font-family: "charlie-text";
-  src: url(./fonts/charlie-display-font-1757553263-0/charlie-display-3.ttf);
+}
+
+.konten-3 .triple-konten-3 .automation .Automation-button:hover{
+  background-color: rgb(167, 170, 217);
+}
+
+
+.konten-3 .triple-konten-3 .card-mirroring {
+  padding: 50px;
+  background-color: #Fafbfc;
+  border-radius: 12px;
+}
+
+.konten-3 .triple-konten-3 .card-mirroring h3{
+  margin: 0px 0px 8px;
+  font-family: "Charlie-display";
+}
+
+.konten-3 .triple-konten-3 .card-mirroring p{
+  width: 170px;
+  font-family: "charlie-text";
+}
+
+.konten-3 .triple-konten-3 .card-mirroring .Compare-button{
+  padding: 11.2px 16px 12.8px;
+  background-color: #ffffff;
+  border: #30a5c9;
+  border-style: groove;
+  border-radius: 12px;
+  font-family: "charlie-text";
+}
+
+.konten-3 .triple-konten-3 .card-mirroring .Compare-button:hover{
+    background-color: rgb(167, 170, 217);
+}
+
+@font-face {
+  font-family: "Charlie-text";
+  src: url(/fonts/charlie-display-font-1757553263-0/charlie-display-3.ttf);
+}
+
+@font-face {
+  font-family: "Charlie-display";
+  src: url(/fonts/charlie-display-font-1757553263-0/charlie-display.ttf);
 }
