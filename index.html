@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Testimonial Card</title>
+    <link rel="stylesheet" href="nixxy.css" />
+  </head>
+  <body>
+    <!-- button -->
+    <div class="container">
+      <div class="pagination" aria-label="Testimonial navigation">
+        <div class="pagination-bar" aria-hidden="true"></div>
+        <div class="pagination-dot" aria-hidden="true"></div>
+        <div class="pagination-dot" aria-hidden="true"></div>
+        <button
+          class="pagination-arrow"
+          aria-label="Previous testimony"
+          type="button"
+          tabindex="0"
+        >
+          &#8249;
+        </button>
+        <button
+          class="pagination-arrow"
+          aria-label="Next testimony"
+          type="button"
+          tabindex="0"
+        >
+          &#8250;
+        </button>
+      </div>
+      <div class="card" role="region" aria-labelledby="testimonial-heading">
+        <section class="card-text">
+          <p id="testimonial-heading">
+            <strong>[Trello is]</strong> great for simplifying complex
+            processes. As a manager, I can chunk [processes] down into
+            bite-sized pieces for my team and then delegate that out, but still
+            keep a bird's-eye view.
+          </p>
+          <div class="separator" aria-hidden="true"></div>
+          <p class="author">Joey Rosenberg</p>
+          <p class="author-role">
+            Global Leadership Director at Women Who Code
+          </p>
+
+          <div
+            class="logo-womenwho"
+            aria-label="Women Who Code logo"
+            role="img"
+          >
+            <!-- Simplified Women Who Code textual logo -->
+            <svg
+              aria-hidden="true"
+              focusable="false"
+              viewBox="0 0 140 30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M10 10h10v10H10z" fill="#0f172a" />
+              <text
+                x="28"
+                y="20"
+                font-family="Arial, sans-serif"
+                font-size="16"
+                fill="#0f172a"
+                font-weight="700"
+              >
+                WOMEN WHO
+              </text>
+              <text
+                x="28"
+                y="35"
+                font-family="Arial, sans-serif"
+                font-size="15"
+                fill="#0f172a"
+                font-weight="900"
+                letter-spacing="0.1em"
+              >
+                CODE
+              </text>
+            </svg>
+          </div>
+          <a href="#" class="read-story">Read the story</a>
+        </section>
+        <section class="card-highlight" aria-label="Survey statistic">
+          75% of organizations report that Trello delivers value to their
+          business within 30 days.
+          <a href="#" class="highlight-link">Trello TechValidate Survey</a>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
