@@ -178,3 +178,62 @@ body {
 .lobby {
   width: 100%;
 }
+
+.Box {
+    background-color: rgb(244, 245, 247);
+    padding-left: 25px;
+    align-items: center;
+}
+
+
+.Box h2 {
+    font-style: sans-serif ;
+    justify-content: center;
+    padding-left: 440px;
+    color: black;
+    font-family: "bebek";
+    font-size: 36px;
+}
+
+.Search-Box {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    
+}
+
+.isi{
+    width: 350px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+button {
+    width: 200px;
+    background-color: #0065ff ;
+    color: rgb(251, 250, 250);
+    border-radius: 5px;
+}
+
+p {
+    justify-content: center;
+    padding-left: 500px;
+    font-size: medium;
+    padding-top: 20px;
+    color: black;
+    font-family:"trello";
+     
+}
+a {
+    color: black;
+}
+
+@font-face {
+    font-family: "trello";
+    src: url(/font/charlie-display-font-1757733941-0/charlie-display-light.ttf)
+}
+
+@font-face {
+    font-family:"bebek";
+    src: url(/font/charlie-display-font-1757733941-0/charlie-display-bold-1.ttf);
+}
