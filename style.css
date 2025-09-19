@@ -341,14 +341,6 @@ body {
   text-align: center;
 }
 
-.isi-2-dalem button {
-  background-color: white;
-  border: 0px;
-  width: 300px;
-  gap: 10px;
-  height: 136px;
-}
-
 .isi-kanan {
   grid-column: span 2 / span 2;
 }
@@ -360,7 +352,15 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
-  padding: 10px;0
+  padding: 10px;
+}
+
+.card-1-button {
+  background-color: white;
+  border: 0px;
+  width: 500px;
+  gap: 10px;
+  height: 136px;
 }
 
 .card-1 h3 {
@@ -387,6 +387,14 @@ body {
   padding: 10px;
 }
 
+.card-2-button {
+  background-color: white;
+  border: 0px;
+  width: 500px;
+  gap: 10px;
+  height: 136px;
+}
+
 .card-2 h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -411,6 +419,14 @@ body {
   padding: 10px;
 }
 
+.card-3-button {
+  background-color: white;
+  border: 0px;
+  width: 500px;
+  gap: 10px;
+  height: 136px;
+}
+
 .card-3 h3 {
   margin-top: 0;
   margin-bottom: 10px;
@@ -423,6 +439,13 @@ body {
   font-size: 16px;
   margin: 0;
   text-align: start;
+}
+
+.isi-kanan {
+    margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
 }
 
 .card-4 {
@@ -891,7 +914,7 @@ body {
 
 .read-story:hover {
   color: #3b82f6;
-  font-size: 100px;
+  /* font-size: 100px; */
   font-family: "trello";
 }
 
@@ -928,8 +951,187 @@ body {
 }
 
 
+/* Comunity */
+.comunity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "charlie";
+  font-weight: 800;
+  font-size: 20px;
+    margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
+}
+
+.comunity p {
+  margin: 50px 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* last konten */
+.background-Box {
+  background-color: #f4f5f7;
+}
+
+.background-Box .box-isi {
+  margin: 20px 16px;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-Box .box-isi h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: "charlie-text";
+  margin: 0px 0px 8px;
+}
+
+.background-Box .box-isi .Search-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.background-Box .box-isi .Search-Box .isi {
+  width: 300px;
+  height: auto;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.background-Box .box-isi .Search-Box button {
+  width: 160px;
+  height: auto;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.background-Box .box-isi .Search-Box button:hover {
+  background-color: #0658af;
+}
+
+.background-Box .box-isi p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "charlie";
+}
+
+
+
+
+
+/* Comunity */
+.comunity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "charlie";
+  font-weight: 800;
+  font-size: 20px;
+    margin: 0 auto;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1260px;
+
+}
+
+.comunity p {
+  margin: 50px 0px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* last konten */
+.background-Box {
+  background-color: #f4f5f7;
+}
+
+.background-Box .box-isi {
+  margin: 20px 16px;
+  padding: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background-Box .box-isi h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-family: "charlie-text";
+  margin: 0px 0px 8px;
+}
+
+.background-Box .box-isi .Search-Box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.background-Box .box-isi .Search-Box .isi {
+  width: 300px;
+  height: auto;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.background-Box .box-isi .Search-Box button {
+  width: 160px;
+  height: auto;
+  background-color: #007bff;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.background-Box .box-isi .Search-Box button:hover {
+  background-color: #0658af;
+}
+
+.background-Box .box-isi p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: "charlie";
+}
+
+
 
 /* footer */
+
+
+
 .responsif-content {
   width: 100%;
   height: 100%;
@@ -1217,20 +1419,26 @@ body {
   }
   .card-1 {
     width: 100% !important;
-    height: 136px !important;
-    margin: 0 !important;
-    padding: 1px !important;
-    border-radius: 10% !important;
+    height: 110px !important;
+    width: 300px !important; 
+    margin: 10px !important;
+    shadow-box: 0px white !important;
+    border-radius: 0
+    padding: 10px !important;
   }
   .card-1 h3 {
     margin: 5px;
   }
   .card-1-button {
-    padding: 0 0 0 10px;
+    padding-left: 10px;
+    height: 140px !important;
     margin-left: 40px;
-    background-color: blue !important;
-    border-radius: 10% !important;
+    background-color: rgb(0, 199, 229);
+    border-radius: 0.3rem 0px 0px 0.3rem;
+    width: 0.2rem;
   }
+
+  
 
   .card-2-button,
   .card-3-button {
@@ -1367,6 +1575,16 @@ body {
     top: -56px;
     right: 50%;
     transform: translateX(50%);
+  }
+}
+
+@media (max-width: 900px) {
+  .comunity {
+    width: 900px;
+  }
+  .comunity-isi img {
+    width: 80vw;
+    height: 10vh;
   }
 }
 
