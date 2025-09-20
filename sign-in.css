@@ -1,0 +1,202 @@
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  z-index: 0;
+  background-image: url("asset/bg-login-kiri.jpeg"),
+url("asset/bg-login-kanan.jpeg");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #f4f4f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.background {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  z-index: 0;
+  background-image: url("asset/bg-login-kiri.jpeg"),
+    url("asset/bg-login-kanan.jpeg");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #fafbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@font-face {
+  font-family: "trello";
+  src: url(/font/charlie-display-font-1757733941-0/charlie-display-light.ttf);
+}
+
+@font-face {
+  font-family: "bebek";
+  src: url(/font/charlie-display-font-1757733941-0/charlie-display-bold-1.ttf);
+}
+
+/* content-login */
+
+.isi-login {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-column-gap: 0px;
+  box-sizing: border-box;
+  width: 400px;
+  padding: 20px;
+  margin-top: 300px;
+}
+/* login atas */
+
+.logo-atas {
+  width: 50%;
+  height: 40;
+}
+
+.ayam {
+  font-family: "ayam";
+  font-size: 9px;
+  letter-spacing: normal;
+}
+
+.login-atas {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 16px;
+  width: 350px;
+}
+/* login tengah */
+
+.login-tengah {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  width: 350px;
+  height: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "ayam";
+}
+
+.isi-email {
+  padding: 10px;
+  border: 0.5 #63ade1ff solid;
+}
+
+.checkbox {
+  display: flex;
+  padding: 3px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.button1 {
+  background-color: #224d69ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #185c8aff;
+}
+
+/* login bawah */
+
+.login-bawah {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 100%;
+  padding-left: 32px;
+  padding-right: 32px;
+  background: rgb(255, 255, 255);
+  box-sizing: border-box;
+  font-family: "ayam";
+  text-align: center;
+}
+
+.button2-login {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 20px;
+}
+
+.button2-login img {
+  width: 2vw;
+  height: 10vh;
+  gap: 20px;
+}
+
+.button2-login button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  border: 0.5px gray solid;
+  justify-content: center;
+  background-color: white;
+}
+
+.login-bawah {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "ayam";
+}
+
+/* footer/bawah */
+
+.footer {
+  width: 350px;
+  text-align: center;
+  align-items: center;
+}
+
+.footer img {
+  width: 200px;
+  gap: 20px;
+}
+
+.button1 {
+background-color: #63c5da;
+font-family: "ayam";
+}
+
+@media (max-width: 500px) {
+background2 {
+    margin-top: 0;
+    overflow-y: hidden;
+}
+.isi-login {
+    margin-top: 0px;
+}
+}
+
+@media (max-width: 900px) {
+}
+
+@font-face {
+font-family: "ayam";
+src: url(/font/charlie-display-3.ttf);
+}
