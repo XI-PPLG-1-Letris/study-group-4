@@ -102,6 +102,13 @@ body {
   border: 0.5 #63ade1ff solid;
 }
 
+.checkbox {
+  display: flex;
+  padding: 3px;
+  font-size: 15px;
+  align-items: center;
+}
+
 .button1 {
   background-color: #224d69ff;
   padding: 10px 15px;
