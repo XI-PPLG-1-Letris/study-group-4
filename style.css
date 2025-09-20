@@ -1,32 +1,51 @@
 body {
-  background-color: rgb(231, 228, 230);
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  /* width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  z-index: 0;
+  background-image: url("asset/bg-login-kiri.jpeg"),
+    url("asset/bg-login-kanan.jpeg");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #f4f4f4ff;
+  display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
-.img{
-  width: 10px;
-  height: auto;
+.background {
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 0;
+  z-index: 0;
+  background-image: url("asset/bg-login-kiri.jpeg"),
+    url("asset/bg-login-kanan.jpeg");
+  background-position: left bottom, right bottom;
+  background-repeat: no-repeat, no-repeat;
+  background-color: #fafbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-
 
 @font-face {
-    font-family: "trello";
-    src: url(/font/charlie-display-font-1757733941-0/charlie-display-light.ttf)
+  font-family: "trello";
+  src: url(/font/charlie-display-font-1757733941-0/charlie-display-light.ttf);
 }
 
 @font-face {
-    font-family:"bebek";
-    src: url(/font/charlie-display-font-1757733941-0/charlie-display-bold-1.ttf);
+  font-family: "bebek";
+  src: url(/font/charlie-display-font-1757733941-0/charlie-display-bold-1.ttf);
 }
-
 
 /* content-login */
 
-.all-login {
-  padding-left: 100px;
-  padding-right: 100px;
-  z-index: 100;
-}
 .isi-login {
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
@@ -34,16 +53,20 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr;
   grid-column-gap: 0px;
-  padding: 40px;
-  margin: 0 auto;
-  width: 30vw;
-  height: 100%;
   box-sizing: border-box;
+  width: 400px;
+  padding: 20px;
+  margin-top: 300px;
+}
+/* login atas */
+
+.logo-atas {
+  width: 50%;
+  height: 40 %;
 }
 
 .ayam {
-  font-family:'ayam';
-  margin-left: 120px;
+  font-family: "ayam";
   font-size: 9px;
   letter-spacing: normal;
 }
@@ -56,40 +79,53 @@ body {
   align-items: center;
   text-align: center;
   margin-bottom: 16px;
-  width: 100%;
-  height: 100%;
+  width: 350px;
 }
-
-.gambar-login {
-  width: 100px;
-  height: 100px;
-}
+/* login tengah */
 
 .login-tengah {
   display: flex;
   flex-direction: column;
-  margin: 0px;
-  width: 100%;
+  margin: 0;
+  width: 350px;
   height: 100%;
   padding-left: 32px;
   padding-right: 32px;
-  background: rgb(255, 255, 255);
+  background: #f4f4f4f;
   box-sizing: border-box;
   font-size: 10px;
-  font-family: 'ayam';
+  font-family: "ayam";
 }
+
+.isi-email {
+  padding: 10px;
+  border: 0.5 #63ade1ff solid;
+}
+
+.button1 {
+  background-color: #224d69ff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+}
+
+.button1:hover {
+  background-color: #185c8aff;
+}
+
+/* login bawah */
 
 .login-bawah {
   display: flex;
   flex-direction: column;
-  margin: 0px auto;
-  width: 100%;
+  width: 350px;
   height: 100%;
   padding-left: 32px;
   padding-right: 32px;
   background: rgb(255, 255, 255);
   box-sizing: border-box;
-  font-family: 'ayam';
+  font-family: "ayam";
+  text-align: center;
 }
 
 .button2-login {
@@ -102,66 +138,56 @@ body {
 
 .button2-login img {
   width: 2vw;
-  height: 10vh ;
+  height: 10vh;
   gap: 20px;
 }
 
 .button2-login button {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  border: 0.5px gray solid;
+  justify-content: center;
+  background-color: white;
 }
 
 .login-bawah {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'ayam';
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: "ayam";
 }
 
-.footer img{
-  width: 10vw;
-  gap: 20px;
-  display: flex;
+.footer {
+  width: 350px;
+  text-align: center;
   align-items: center;
-  font-family: 'ayam';
 }
 
-.gambar {
-  margin-top: 200px;
+.footer img {
+  width: 200px;
+  gap: 20px;
 }
 
-.button1{
-  background-color:#63c5da;
-  font-family: 'ayam';
+.button1 {
+  background-color: #63c5da;
+  font-family: "ayam";
 }
 
-.pp{
-  margin-left: 10px;
+@media (max-width: 500px) {
+  background2 {
+    margin-top: 0;
+    overflow-y: hidden;
+  }
+  .isi-login {
+    margin-top: 0px;
+  }
 }
 
-.gg{
-  margin-left: 10px;
+@media (max-width: 900px) {
 }
 
-.mm{
-  margin-left: 10px
-}
-
-.ss{
-  margin-left: 10px;
-}
-
-.immg{
-  margin-left: 105px;
-}
-
-.kk{
-  margin-left: 105px
-}
 @font-face {
-  font-family:'ayam';
+  font-family: "ayam";
   src: url(/font/charlie-display-3.ttf);
 }
-
